@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+
+<body>
+    <form name="myForm">
+        <div class="form_header">
+            Can you please provide your personal details?
+        </div>
+
+        <div class="form_field">
+            <div class="field_heading">Name</div>
+            <input class="form_input" id="name"></input>
+        </div>
+
+        <div class="form_field">
+            <div class="field_heading">Date Of Birth</div>
+            <input type="date" class="form_input" id="dob"></input>
+        </div>
+
+        <div class="form_field">
+            <div class="field_heading">Contact Number</div>
+            <input class="form_input" id="contact"></input>
+        </div>
+
+        <div class="form_field">
+            <div class="field_heading">Country</div>
+            <select type="select" id="country_dropdown" class="form_input">
+                <option value="" selected disabled hidden></option>
+            </select>
+        </div>
+
+        <div class="form_field">
+            <div class="field_heading">State</div>
+            <select type="select" id="state_dropdown" style="display: none" class="form_input">
+                <option value="" selected disabled hidden></option>
+            </select>
+        </div>
+
+        <div class="form_field">
+            <div class="field_heading">Your Email</div>
+            <input class="form_input" id="email"></input>
+        </div>
+
+        <button type="button" class="submit-button">Submit</button>
+    </form>
+
+    <script src="../Form/form.js"></script>
+</body>
+
+</html>
